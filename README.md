@@ -7,7 +7,7 @@ rmuc2021_ignition_simulator是基于Ignition Gazebo的仿真环境，为RoboMast
 
 * RoboMaster University Championship 2021简易场地模型：
   * 模型来自于[robomaster BBS论坛官方发布](https://bbs.robomaster.com/forum.php?mod=viewthread&tid=11300) （2020.11.27版），若存在区别和误差，以官方为准。
-  * 不包括基地，前哨站等复杂设施，也不包含场地纹理。
+  * 不包括基地，前哨站，能量机关等复杂设施，也不包含场地纹理。
 
 > 注意：[Ignition Gazebo](https://github.com/ignitionrobotics/ign-gazebo)目前依然处于快速开发期，仿真功能不完善，且可能存在Bug。
 
