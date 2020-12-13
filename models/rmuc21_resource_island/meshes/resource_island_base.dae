@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.90.0 commit date:2020-08-31, commit time:11:26, hash:0330d1af29c0</authoring_tool>
+    </contributor>
+    <created>2020-12-13T14:23:27</created>
+    <modified>2020-12-13T14:23:27</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Part__Feature491-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.4078431 0.03137255 0.03137255 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Part__Feature475-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.5294118 0.5294118 0.5294118 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Part__Feature476-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.08627451 0.08627451 0.5607843 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Part__Feature485-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.03921569 0.03921569 0.03921569 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_materials>
+    <material id="Part__Feature491-material" name="Part__Feature491">
+      <instance_effect url="#Part__Feature491-effect"/>
+    </material>
+    <material id="Part__Feature475-material" name="Part__Feature475">
+      <instance_effect url="#Part__Feature475-effect"/>
+    </material>
+    <material id="Part__Feature476-material" name="Part__Feature476">
+      <instance_effect url="#Part__Feature476-effect"/>
+    </material>
+    <material id="Part__Feature485-material" name="Part__Feature485">
+      <instance_effect url="#Part__Feature485-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Part__Feature491-mesh" name="Part__Feature491">
+      <mesh>
+        <source id="Part__Feature491-mesh-positions">
+          <float_array id="Part__Feature491-mesh-positions-array" count="240">0.1800003 -1.288813 0.400004 -0.1799997 -1.439862 0 0.1799997 -1.439862 0 -0.1800003 -1.288813 0.400004 0.1800002 1.288813 0.400004 0.1799997 1.439862 0 -0.1800002 1.288813 0.400004 -0.1799997 1.439862 0 0.07204848 -0.7849999 0.5 -0.07204848 -0.8149998 0.5 0.07204848 -0.8149998 0.5 -0.07204848 -0.7849999 0.5 0.07204848 -0.835 0.403067 -0.07204848 -0.835 0.403067 -0.07204854 -0.765 0.403067 0.07204854 -0.765 0.403067 0.0720486 -0.495 0.5 -0.07204854 -0.4649999 0.5 -0.0720486 -0.495 0.5 0.07204854 -0.4649999 0.5 -0.0720486 -0.445 0.403067 -0.07204848 -0.515 0.403067 0.07204848 -0.515 0.403067 0.0720486 -0.445 0.403067 0.07204854 -0.1449999 0.5 -0.07204854 -0.1449999 0.5 -0.07204854 -0.1749999 0.5 0.07204854 -0.1749999 0.5 -0.07204848 -0.1949999 0.403067 -0.07204854 -0.125 0.403067 0.07204848 -0.1949999 0.403067 0.07204854 -0.125 0.403067 0.07204854 0.145 0.5 -0.07204854 0.175 0.5 -0.07204854 0.145 0.5 0.07204854 0.175 0.5 -0.07204848 0.195 0.403067 -0.07204854 0.125 0.403067 0.07204854 0.125 0.403067 0.07204848 0.195 0.403067 0.07204854 0.465 0.5 -0.0720486 0.495 0.5 -0.07204854 0.465 0.5 0.0720486 0.495 0.5 -0.07204854 0.4450001 0.403067 -0.07204848 0.5150001 0.403067 0.07204854 0.4450001 0.403067 0.07204848 0.5150001 0.403067 0.07204848 0.7850001 0.5 -0.07204848 0.8150001 0.5 -0.07204848 0.7850001 0.5 0.07204848 0.8150001 0.5 0.07204848 0.7650001 0.403067 -0.07204848 0.7650001 0.403067 -0.07204848 0.835 0.403067 0.07204848 0.835 0.403067 -0.3829299 1.212115 0 -0.4000003 1.212115 0 -0.3999999 1.181905 0.08000004 -0.125 1.023305 0.5 -0.276243 1.023306 0.5 -0.125 1.212115 0 -0.125 -1.212115 0 -0.3829299 -1.212115 0 -0.3999999 -1.181905 0.08000004 -0.4000003 -1.212115 0 -0.125 -1.023305 0.5 -0.2762432 -1.023305 0.5 0.3999999 -1.181905 0.08000004 0.125 -1.212115 0 0.3829299 -1.212115 0 0.125 -1.023305 0.5 0.4000003 -1.212115 0 0.2762432 -1.023305 0.5 0.3829299 1.212115 0 0.125 1.212115 0 0.4000003 1.212115 0 0.3999999 1.181905 0.08000004 0.276243 1.023306 0.5 0.125 1.023305 0.5</float_array>
+          <technique_common>
+            <accessor source="#Part__Feature491-mesh-positions-array" count="80" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Part__Feature491-mesh-normals">
+          <float_array id="Part__Feature491-mesh-normals-array" count="243">0 -0.9355219 0.353269 0 -0.9355217 0.3532694 1 0 -1.49883e-6 1 0 -1.34109e-6 0 0 1 -1 0 -1.34109e-6 -1 0 -1.49883e-6 0 0.9355216 0.3532696 0 0.9355219 0.3532689 0 0 -1 0 -0.9793703 0.2020739 -1 0 0 -1 -5.49022e-7 2.1961e-7 0 0.9793711 0.2020699 0 0.9793709 0.2020708 1 0 3.07453e-7 1 -5.49022e-7 0 -1 9.60789e-7 5.12421e-7 -1 -1.2353e-6 -6.58828e-7 0 -0.9793709 0.202071 0 -0.9793706 0.2020727 1 9.60789e-7 5.12421e-7 1 -1.2353e-6 -6.58828e-7 0 0.979371 0.2020705 0 0.9793708 0.2020717 -1 -9.6079e-7 -1.28105e-7 -1 -4.11767e-7 0 0 -0.9793708 0.2020716 0 -0.9793708 0.2020714 1 -9.6079e-7 -1.28105e-7 1 -4.11767e-7 0 0 0.9793708 0.2020717 0 0.9793708 0.2020713 -1 9.60789e-7 0 -1 5.49023e-7 0 0 -0.9793708 0.2020712 0 -0.9793708 0.2020716 1 9.6079e-7 0 1 5.49023e-7 0 0 0.9793708 0.2020713 0 0.9793708 0.2020715 -1 -6.40527e-7 0 -1 9.60791e-7 -5.92944e-7 0 -0.9793707 0.2020717 1 -6.40527e-7 0 1 9.60791e-7 -5.92944e-7 0 0.9793707 0.2020717 0 0.9793705 0.2020729 0 -0.9793705 0.2020729 0 -0.9793708 0.2020719 -1 -4.11767e-7 -2.19609e-7 0 0.979371 0.2020709 0 0.9793708 0.2020719 1 0 0 1 -4.11767e-7 -2.19609e-7 3.26974e-5 0.9355207 0.353272 7.68099e-7 0.9355214 0.3532703 -3.04153e-7 0.9355211 0.3532708 -1.2984e-6 0.9355212 0.3532706 3.26974e-5 -0.9355205 0.3532726 -8.65598e-7 -0.9355221 0.3532683 0 -0.9355211 0.3532708 0 -0.9355212 0.3532708 -1 0 5.58793e-6 -0.9592248 0 0.2826443 -0.9592248 0 0.2826442 1 0 1.30207e-7 1 0 0 8.65598e-7 -0.9355223 0.353268 0 -0.9355211 0.3532709 -3.26974e-5 -0.9355205 0.3532726 1 0 5.58793e-6 0.9592248 0 0.2826442 0.9592248 0 0.2826443 3.85123e-7 0 1 -1 0 0 -1 0 -1.30207e-7 -7.68099e-7 0.9355214 0.3532703 3.04153e-7 0.9355211 0.3532707 1.2984e-6 0.9355213 0.3532703 -3.26974e-5 0.9355205 0.3532726</float_array>
+          <technique_common>
+            <accessor source="#Part__Feature491-mesh-normals-array" count="81" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Part__Feature491-mesh-vertices">
+          <input semantic="POSITION" source="#Part__Feature491-mesh-positions"/>
+        </vertices>
+        <triangles material="Part__Feature491-material" count="20">
+          <input semantic="VERTEX" source="#Part__Feature491-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Part__Feature491-mesh-normals" offset="1"/>
+          <p>56 55 57 55 58 55 59 56 58 56 60 56 61 57 58 57 59 57 61 58 56 58 58 58 61 9 62 9 56 9 56 9 62 9 63 9 64 59 65 59 63 59 62 60 64 60 63 60 66 61 67 61 64 61 66 62 64 62 62 62 63 9 65 9 56 9 56 9 65 9 57 9 65 63 58 63 57 63 64 63 58 63 65 63 64 64 60 64 58 64 67 65 60 65 64 65 59 4 60 4 67 4 59 4 67 4 66 4 66 66 61 66 59 66 62 67 61 67 66 67</p>
+        </triangles>
+        <triangles material="Part__Feature475-material" count="12">
+          <input semantic="VERTEX" source="#Part__Feature491-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Part__Feature491-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 0 1 3 1 1 1 2 2 4 2 0 2 2 3 5 3 4 3 0 4 6 4 3 4 4 4 6 4 0 4 1 5 6 5 7 5 3 6 6 6 1 6 4 7 7 7 6 7 5 8 7 8 4 8 5 9 1 9 7 9 5 9 2 9 1 9</p>
+        </triangles>
+        <triangles material="Part__Feature476-material" count="20">
+          <input semantic="VERTEX" source="#Part__Feature491-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Part__Feature491-mesh-normals" offset="1"/>
+          <p>68 68 69 68 70 68 68 69 71 69 69 69 68 70 70 70 72 70 73 61 71 61 68 61 69 9 74 9 70 9 69 9 75 9 74 9 70 9 74 9 72 9 74 9 76 9 72 9 68 71 76 71 77 71 72 71 76 71 68 71 68 72 78 72 73 72 68 73 77 73 78 73 73 4 79 4 71 4 73 74 78 74 79 74 69 75 79 75 75 75 69 76 71 76 79 76 77 77 79 77 78 77 77 78 75 78 79 78 74 79 75 79 77 79 76 80 74 80 77 80</p>
+        </triangles>
+        <triangles material="Part__Feature485-material" count="72">
+          <input semantic="VERTEX" source="#Part__Feature491-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Part__Feature491-mesh-normals" offset="1"/>
+          <p>8 4 9 4 10 4 8 4 11 4 9 4 12 10 9 10 13 10 10 10 9 10 12 10 9 11 11 11 13 11 13 12 11 12 14 12 8 13 14 13 11 13 15 14 14 14 8 14 15 15 8 15 10 15 12 16 15 16 10 16 13 9 14 9 15 9 12 9 13 9 15 9 16 4 17 4 18 4 19 4 17 4 16 4 17 17 20 17 18 17 18 18 20 18 21 18 22 19 18 19 21 19 16 20 18 20 22 20 23 21 19 21 16 21 23 22 16 22 22 22 19 23 20 23 17 23 23 24 20 24 19 24 22 9 20 9 23 9 21 9 20 9 22 9 24 4 25 4 26 4 27 4 24 4 26 4 25 25 28 25 26 25 25 26 29 26 28 26 27 27 28 27 30 27 27 28 26 28 28 28 30 29 24 29 27 29 31 30 24 30 30 30 24 31 29 31 25 31 31 32 29 32 24 32 30 9 29 9 31 9 28 9 29 9 30 9 32 4 33 4 34 4 35 4 33 4 32 4 33 33 36 33 34 33 34 34 36 34 37 34 32 35 37 35 38 35 32 36 34 36 37 36 39 37 35 37 32 37 39 38 32 38 38 38 39 39 33 39 35 39 39 40 36 40 33 40 38 9 36 9 39 9 37 9 36 9 38 9 40 4 41 4 42 4 43 4 41 4 40 4 41 41 44 41 42 41 41 42 45 42 44 42 40 43 44 43 46 43 40 43 42 43 44 43 46 44 43 44 40 44 47 45 43 45 46 45 43 46 45 46 41 46 47 47 45 47 43 47 46 9 45 9 47 9 44 9 45 9 46 9 48 4 49 4 50 4 51 4 49 4 48 4 52 48 50 48 53 48 48 49 50 49 52 49 53 50 50 50 54 50 50 11 49 11 54 11 55 51 49 51 51 51 55 52 54 52 49 52 55 53 51 53 48 53 52 54 55 54 48 54 52 9 53 9 54 9 52 9 54 9 55 9</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="_resource_island_base" name=" resource_island_base" type="NODE">
+        <matrix sid="transform">1 0 0 2.98023e-8 0 1 0 -2.98023e-8 0 0 1 0.1903629 0 0 0 1</matrix>
+        <instance_geometry url="#Part__Feature491-mesh" name=" resource_island_base">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Part__Feature491-material" target="#Part__Feature491-material"/>
+              <instance_material symbol="Part__Feature475-material" target="#Part__Feature475-material"/>
+              <instance_material symbol="Part__Feature476-material" target="#Part__Feature476-material"/>
+              <instance_material symbol="Part__Feature485-material" target="#Part__Feature485-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

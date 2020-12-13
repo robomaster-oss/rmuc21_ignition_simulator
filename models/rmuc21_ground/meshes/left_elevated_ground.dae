@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.90.0 commit date:2020-08-31, commit time:11:26, hash:0330d1af29c0</authoring_tool>
+    </contributor>
+    <created>2020-12-13T13:42:05</created>
+    <modified>2020-12-13T13:42:05</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Part__Feature072-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.5294118 0.5294118 0.5294118 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Part__Feature007-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.5294118 0.5294118 0.5294118 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Part__Feature012-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.7490197 0.7490197 0.7490197 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Part__Feature067-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.5294118 0.5294118 0.5294118 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Part__Feature337-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.5294118 0.5294118 0.5294118 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_materials>
+    <material id="Part__Feature072-material" name="Part__Feature072">
+      <instance_effect url="#Part__Feature072-effect"/>
+    </material>
+    <material id="Part__Feature007-material" name="Part__Feature007">
+      <instance_effect url="#Part__Feature007-effect"/>
+    </material>
+    <material id="Part__Feature012-material" name="Part__Feature012">
+      <instance_effect url="#Part__Feature012-effect"/>
+    </material>
+    <material id="Part__Feature067-material" name="Part__Feature067">
+      <instance_effect url="#Part__Feature067-effect"/>
+    </material>
+    <material id="Part__Feature337-material" name="Part__Feature337">
+      <instance_effect url="#Part__Feature337-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Part__Feature072-mesh" name="Part__Feature072">
+      <mesh>
+        <source id="Part__Feature072-mesh-positions">
+          <float_array id="Part__Feature072-mesh-positions-array" count="270">-11.625 5.879284 0.500363 -11.625 5.879284 0.1003628 -11.625 3.997432 0.1003628 -9.92778 3.997432 0.1003628 -9.738785 5.879284 0.500363 -9.92778 5.879284 0.1003628 -3.051038 -1.276461 0.500363 -3.955334 -2.251472 0.500363 -2.890437 -1.505823 0.500363 -4.115936 -2.02211 0.500363 -3.051038 -1.276461 0.7003629 -4.115936 -2.02211 0.7003629 -5.045201 -0.6949813 0.7003629 -5.045201 -0.6949813 0.1003628 -3.634132 -2.710198 0.1003628 -2.569234 -1.964548 0.1003628 -3.745201 -0.2850929 0.7003629 -3.745201 -0.2850929 0.1003628 -3.745201 1.685093 0.7003629 -5.045201 2.094981 0.7003629 -3.063434 4.925238 0.7003629 -1.998536 4.179589 0.7003629 -5.045201 2.094981 0.1003628 -1.005134 5.598314 0.1003628 -2.070052 6.343935 0.1003628 -2.069991 6.343935 0.1003628 -3.745201 1.685093 0.1003628 -1.005134 5.598314 0.3005129 -1.372999 5.334509 0.399115 -2.192151 5.908085 0.399115 -2.070052 6.343935 0.3005209 -2.036065 6.130999 0.33629 -2.069991 6.343935 0.3005129 -1.216913 5.557422 0.33629 -2.194731 5.9044 0.379628 -1.375579 5.330824 0.379628 -0.9058008 5.52876 0.1003628 -0.928705 5.544746 0.1699229 -0.9058036 5.528708 0.1003628 -0.928705 5.544798 0.1699309 -4.796232 6.43 0.1003628 -4.845581 6.43 0.1003628 -4.845581 7.43 0.1003628 -4.536995 6.43 0.1003628 -2.070052 6.343935 0.1003628 -2.934062 5.11 0.1003628 -5.461269 5.11 0.1003628 -1.005134 5.598314 0.1003628 -0.2704111 6.429973 0.1003628 -0.1049589 6.429973 0.1003628 -0.1049396 6.43 0.1003628 -1.005157 5.598281 0.1003628 -0.9028495 5.526694 0.1003628 1.042528 7.43 0.1003628 1.042528 6.43 0.1003628 -4.652354 6.43 0.300363 -4.845581 6.43 0.300363 -4.845581 6.43 0.1484229 -4.845581 7.43 0.300363 -2.092934 6.36 0.300363 -4.701369 6.36 0.300363 -0.2704111 6.429973 0.300363 -0.9028495 5.526694 0.300363 -0.1049396 6.43 0.300363 -0.1049589 6.429973 0.300363 1.042528 7.43 0.300363 1.042528 6.43 0.300363 -2.070052 6.343935 0.2977929 -2.069991 6.343935 0.2977929 -1.005134 5.598314 0.1784939 -1.005157 5.598281 0.1784878 -2.069991 6.343935 0.1003628 -11.625 7.43 0.500363 -11.625 5.879284 0.1003628 -11.625 5.879284 0.500363 -11.625 7.43 0.1003628 -9.525001 5.879284 0.1003628 -4.845581 7.43 0.1003628 -5.028697 6.43 0.1003628 -4.845581 6.43 0.1003628 -7.908279 2.317531 0.1003628 -9.525001 2.417531 0.1003628 -9.425001 2.317531 0.1003628 -9.525001 5.879284 0.500363 -7.908279 2.317531 0.500363 -9.525001 2.417531 0.500363 -9.425001 2.317531 0.500363 -5.028697 6.43 0.500363 -4.845581 7.43 0.500363 -4.845581 6.43 0.500363</float_array>
+          <technique_common>
+            <accessor source="#Part__Feature072-mesh-positions-array" count="90" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Part__Feature072-mesh-normals">
+          <float_array id="Part__Feature072-mesh-normals-array" count="273">-1 0 0 0 -0.2079119 0.9781476 0 -0.2079116 0.9781476 0 1 0 0 0 -1 0.9041566 0 -0.4272013 0 0 1 0 0 1 0.5735761 -0.8191524 0 0.5735763 -0.8191522 0 -0.8191522 -0.5735762 0 -0.8191522 -0.5735763 0 -0.819151 -0.5735781 5.32185e-6 -0.8191523 -0.5735761 4.84566e-7 0.3333846 -0.4761222 0.8137336 0.3333845 -0.4761226 0.8137335 0.8191522 0.5735763 0 0.8191523 0.5735761 0 0.8191531 0.5735751 -2.66093e-7 0.8191519 0.5735767 8.72162e-7 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 1 0 0 0.819152 -0.5735765 0 0.8191521 -0.5735765 0 0.1290266 0.1842692 0.9743701 0.1290265 0.184269 0.9743702 0.1290227 0.1842697 0.9743705 0.1290286 0.1842667 0.9743703 0.1279916 0.1841284 0.9745332 0.1290265 0.1842687 0.9743702 0.1290268 0.1842672 0.9743704 0.1290247 0.1842704 0.9743701 0.1290265 0.184269 0.9743702 -0.8191521 0.5735763 0 -0.8191524 0.5735761 0 -0.8191521 0.5735763 6.1286e-7 0.5735766 0.819152 0 0.5735765 0.819152 0 0.819155 -0.5735723 1.70072e-5 0.08877724 0.126787 0.9879493 0.08877718 0.1267868 0.9879493 -0.8191514 0.5735775 4.33518e-6 0.5588788 0.7981612 -0.2249296 0.5588794 0.7981642 -0.2249173 0.9435671 -0.05444586 0.3266755 0.9450377 -0.05075794 0.3229978 0 0 -1 0 0 -1 -4.59337e-5 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 -3.55115e-6 0 0 1 0 0 1 -0.7406401 0.518602 -0.4272051 -0.7406415 0.5186029 -0.4272016 0 -0.1579905 0.9874407 0 -0.1579905 0.9874407 -8.3852e-6 -0.1579842 0.9874417 0 -0.1580269 0.9874349 -0.5735198 -0.8191918 -7.43206e-5 -0.5735746 -0.8191534 0 -0.5735743 -0.8191536 0 -0.5735823 -0.8191479 3.2725e-4 -0.5735763 -0.8191522 0 0.8191711 -0.5735493 0 0.8191711 -0.5735493 0 0.8115859 -0.5842331 0 0.8121229 -0.5834866 0 0.004610776 -0.1507735 0.9885576 -0.01169639 -0.1713551 0.9851399 -0.5736048 -0.8191323 7.06468e-6 -0.5735955 -0.8191387 0 -0.8182516 0.5748602 0 -0.8209053 0.5710644 0 -0.5735766 -0.8191521 0 -0.5735765 -0.819152 0 0.8191523 -0.5735761 0 0 0 1 0 0 1 -0.7071069 -0.7071067 0 -0.7071027 -0.707111 0 0.8191519 -0.5735767 0 0.8191521 -0.5735763 0</float_array>
+          <technique_common>
+            <accessor source="#Part__Feature072-mesh-normals-array" count="91" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Part__Feature072-mesh-vertices">
+          <input semantic="POSITION" source="#Part__Feature072-mesh-positions"/>
+        </vertices>
+        <triangles material="Part__Feature072-material" count="8">
+          <input semantic="VERTEX" source="#Part__Feature072-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Part__Feature072-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 0 1 2 1 3 1 4 2 0 2 3 2 5 3 0 3 4 3 5 3 1 3 0 3 2 4 1 4 5 4 3 4 2 4 5 4 3 5 5 5 4 5</p>
+        </triangles>
+        <triangles material="Part__Feature012-material" count="56">
+          <input semantic="VERTEX" source="#Part__Feature072-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Part__Feature072-mesh-normals" offset="1"/>
+          <p>6 6 7 6 8 6 6 7 9 7 7 7 10 8 9 8 6 8 10 9 11 9 9 9 9 10 12 10 13 10 11 11 12 11 9 11 14 12 7 12 9 12 14 13 9 13 13 13 8 14 14 14 15 14 8 15 7 15 14 15 6 16 16 16 10 16 6 17 17 17 16 17 15 18 6 18 8 18 15 19 17 19 6 19 16 20 12 20 11 20 16 6 11 6 10 6 18 6 19 6 12 6 18 21 12 21 16 21 20 22 19 22 18 22 21 6 20 6 18 6 22 0 13 0 12 0 22 0 12 0 19 0 23 4 24 4 25 4 26 23 22 23 24 23 26 4 24 4 23 4 13 24 22 24 26 24 17 4 13 4 26 4 14 25 13 25 17 25 15 26 14 26 17 26 18 27 17 27 26 27 18 27 16 27 17 27 21 28 18 28 26 28 23 29 21 29 26 29 27 29 21 29 23 29 28 30 20 30 21 30 28 31 29 31 20 31 30 32 29 32 31 32 30 33 20 33 29 33 32 34 30 34 31 34 33 35 32 35 31 35 27 36 33 36 28 36 27 37 28 37 21 37 27 38 32 38 33 38 20 39 22 39 19 39 24 40 20 40 30 40 24 41 22 41 20 41 24 3 30 3 32 3 25 3 24 3 32 3 23 42 32 42 27 42 23 43 25 43 32 43 31 44 29 44 34 44 31 45 34 45 35 45 33 46 31 46 35 46 33 47 35 47 28 47 35 48 29 48 28 48 35 49 34 49 29 49</p>
+        </triangles>
+        <triangles material="Part__Feature067-material" count="67">
+          <input semantic="VERTEX" source="#Part__Feature072-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Part__Feature072-mesh-normals" offset="1"/>
+          <p>36 50 37 50 38 50 36 51 39 51 37 51 40 4 41 4 42 4 43 4 40 4 42 4 44 4 43 4 42 4 45 4 46 4 43 4 45 52 43 52 44 52 47 53 44 53 48 53 49 4 48 4 50 4 36 54 51 54 47 54 36 4 47 4 48 4 38 4 51 4 36 4 52 4 36 4 48 4 53 55 48 55 44 55 53 4 44 4 42 4 53 56 50 56 48 56 54 4 50 4 53 4 55 57 56 57 57 57 55 57 40 57 43 57 55 58 57 58 40 58 58 0 57 0 56 0 42 0 41 0 57 0 42 0 57 0 58 0 58 6 56 6 55 6 59 6 55 6 60 6 59 6 58 6 55 6 61 6 59 6 62 6 63 6 61 6 64 6 65 6 63 6 66 6 65 59 59 59 61 59 65 60 61 60 63 60 65 6 58 6 59 6 43 61 60 61 55 61 43 62 46 62 60 62 45 63 60 63 46 63 59 64 60 64 45 64 67 65 59 65 45 65 68 66 59 66 67 66 39 67 36 67 52 67 62 68 69 68 39 68 62 69 39 69 52 69 62 70 59 70 68 70 62 71 68 71 69 71 61 72 52 72 48 72 61 73 62 73 52 73 64 57 61 57 48 57 64 57 48 57 49 57 63 74 64 74 49 74 63 75 49 75 50 75 54 57 63 57 50 57 66 57 63 57 54 57 65 27 54 27 53 27 65 27 66 27 54 27 65 3 42 3 58 3 53 3 42 3 65 3 39 76 70 76 37 76 39 77 69 77 70 77 38 78 37 78 51 78 51 79 37 79 70 79 47 80 70 80 69 80 47 81 51 81 70 81 69 82 68 82 71 82 69 83 71 83 47 83 67 57 71 57 68 57 67 57 44 57 71 57 67 84 45 84 44 84 40 57 57 57 41 57</p>
+        </triangles>
+        <triangles material="Part__Feature337-material" count="32">
+          <input semantic="VERTEX" source="#Part__Feature072-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Part__Feature072-mesh-normals" offset="1"/>
+          <p>72 0 73 0 74 0 75 0 73 0 72 0 76 4 73 4 75 4 77 4 76 4 75 4 78 4 76 4 77 4 79 4 78 4 77 4 80 4 81 4 76 4 80 4 82 4 81 4 80 4 76 4 78 4 83 57 74 57 73 57 83 57 73 57 76 57 84 6 85 6 86 6 83 6 72 6 74 6 83 85 85 85 84 85 87 86 83 86 84 86 88 6 87 6 89 6 88 6 72 6 83 6 88 6 83 6 87 6 86 87 85 87 81 87 86 88 81 88 82 88 76 0 85 0 83 0 76 0 81 0 85 0 80 57 86 57 82 57 84 57 86 57 80 57 87 89 84 89 80 89 87 90 80 90 78 90 78 57 89 57 87 57 79 57 89 57 78 57 88 27 79 27 77 27 88 27 89 27 79 27 77 3 72 3 88 3 77 3 75 3 72 3</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="left_elevated_ground" name="left_elevated_ground" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Part__Feature072-mesh" name="left_elevated_ground">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Part__Feature072-material" target="#Part__Feature072-material"/>
+              <instance_material symbol="Part__Feature007-material" target="#Part__Feature007-material"/>
+              <instance_material symbol="Part__Feature012-material" target="#Part__Feature012-material"/>
+              <instance_material symbol="Part__Feature067-material" target="#Part__Feature067-material"/>
+              <instance_material symbol="Part__Feature337-material" target="#Part__Feature337-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

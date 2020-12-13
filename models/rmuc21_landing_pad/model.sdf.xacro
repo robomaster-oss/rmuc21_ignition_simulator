@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+    <!--macro defination:rmuc21_resource_island_link-->
+    <xacro_define_macro name="rmuc21_landing_pad" params="prefix rgb pose">
+        <link name="${prefix}landing_pad">
+            <pose>${pose}</pose>
+            <visual name="visual">
+                <pose>0 0 0.55 0 0 0</pose>
+                <xacro_macro name="geometry_box" x="2.3" y="2.3" z="1.1"/>
+                <material>
+                    <ambient>${rgb} 1</ambient>
+                    <diffuse>${rgb} 1</diffuse>
+                    <specular>${rgb} 1</specular>
+                </material>
+            </visual>
+            <visual name="sticker_visual">
+                <pose>0 0 1.101 0 0 0</pose>
+                <geometry>
+                    <plane>
+                        <normal>0 0 1</normal>
+                        <size>2.3 2.3</size>
+                    </plane>
+                </geometry>
+                <material>
+                    <diffuse>1.0 1.0 1.0</diffuse>
+                    <pbr>
+                        <metal>
+                            <albedo_map>model://rmuc21_landing_pad/materials/textures/landing_pad.png</albedo_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="collision">
+                <pose>0 0 0.55 0 0 0</pose>
+                <xacro_macro name="geometry_box" x="2.3" y="2.3" z="1.1"/>
+            </collision>
+        </link>
+    </xacro_define_macro>
+    <model name='rmuc21_landing_pad'>
+        <static>1</static>
+        <xacro_macro name="rmuc21_landing_pad" prefix="red_" rgb="1 0 0" pose="0 0 0 0 0 0" />
+    </model>
+</sdf>

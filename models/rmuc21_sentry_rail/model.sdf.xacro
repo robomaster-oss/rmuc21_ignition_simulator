@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+    <!--macro defination:rmuc21_sentry_rail-->
+    <xacro_define_macro name="rmuc21_sentry_rail" params="prefix pose">
+        <link name="${prefix}sentry_rail">
+            <pose>${pose}</pose>
+            <xacro_macro name="visual_collision_with_mesh" prefix="sentry_rail" uri="model://rmuc21_sentry_rail/meshes/sentry_rail.dae"/>
+        </link>
+    </xacro_define_macro>
+    <!--rmuc21_sentry_rail-->
+    <model name='rmuc21_sentry_rail'>
+        <static>1</static>
+        <xacro_macro name="rmuc21_sentry_rail" prefix="red_" pose="0 0 1.445 0 0 0"/>
+    </model>
+</sdf>
