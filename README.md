@@ -53,7 +53,7 @@ ros2 launch rmuc21_ignition_simulator standard_robot1v1.launch.py
 **控制机器人移动** （以red1步兵机器人为例）
 
 ```bash
-ros2 run rmua19_ignition_simulator test_control_chassis.py --ros-args -r __ns:=/standard_robot_red1 -p v:=0.3 -p w:=0.3
+ros2 run rmoss_ign_base test_chassis_cmd.py  --ros-args -r __ns:=/standard_robot_red1 -p v:=0.3 -p w:=0.3
 ```
 
 根据以下提示输入
@@ -74,7 +74,7 @@ CTRL-C to quit
 **控制机器人云台** （以red1步兵机器人为例）
 
 ```bash
-ros2 run rmua19_ignition_simulator test_control_gimbal.py --ros-args -r __ns:=/standard_robot_red1
+ros2 run rmoss_ign_base test_gimbal_cmd.py  --ros-args -r __ns:=/standard_robot_red1
 ```
 
 根据以下提示输入
@@ -105,4 +105,4 @@ ros2 run rqt_image_view rqt_image_view
 
 maintainer: Zhenpeng Ge, zhenpeng.ge@qq.com
 
-rmuc2021_ignition_simulator is provided under MIT.
+rmuc2021_ignition_simulator is provided under MIT License.
