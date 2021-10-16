@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+    <xmacro_include uri="model://rm21_armor_module/rm21_armor_module.def.xmacro" />
+    <xmacro_define_block name="power_rune_leaf_visual_collision" params="suffix angle">
+        <visual name="leaf${suffix}_bracket_visual">
+            <pose>0 0 0 ${angle} 0 0</pose>
+            <xmacro_block name="geometry_mesh" uri="model://rmuc21_power_rune/meshes/power_rune_bracket.dae"/>
+        </visual>
+        <visual name="leaf${suffix}_light_bar1_visual">
+            <pose>0 0 0 ${angle} 0 0</pose>
+            <xmacro_block name="geometry_mesh" uri="model://rmuc21_power_rune/meshes/power_rune_light_bar1.dae"/>
+        </visual>
+        <visual name="leaf${suffix}_light_bar2_visual">
+            <pose>0 0 0 ${angle} 0 0</pose>
+            <xmacro_block name="geometry_mesh" uri="model://rmuc21_power_rune/meshes/power_rune_light_bar2.dae"/>
+        </visual>
+        <visual name="leaf${suffix}_light_bar3_visual">
+            <pose>0 0 0 ${angle} 0 0</pose>
+            <xmacro_block name="geometry_mesh" uri="model://rmuc21_power_rune/meshes/power_rune_light_bar3.dae"/>
+        </visual>
+    </xmacro_define_block>
+    <xmacro_define_block name="power_rune_leaf_armor_link" params="parent suffix angle">
+        <xmacro_block name="large_armor" suffix="${suffix}" parent="${parent}"
+                sticker_uri="" pose="0.14775 ${0.639445*sin(angle)} ${0.639445*cos(angle)} ${-angle} 0 0"/>
+    </xmacro_define_block>
+    <xmacro_define_block name="power_rune" params="prefix parent pose">
+        <joint name="${prefix}power_rune_joint" type="fixed">
+            <pose relative_to="${parent}">${pose}</pose>
+            <parent>${parent}</parent>
+            <child>${prefix}power_rune</child>
+        </joint>
+        <link name="${prefix}power_rune">
+            <pose relative_to="${prefix}power_rune_joint">0 0 0 0 0 0</pose>
+            <!--base-->
+            <xmacro_block name="visual_collision_with_mesh" prefix="base_" uri="model://rmuc21_power_rune/meshes/power_rune_base.dae"/> 
+            <!--leaf-->
+            <xmacro_block name="power_rune_leaf_visual_collision" suffix="_1" angle = "0"/> 
+            <xmacro_block name="power_rune_leaf_visual_collision" suffix="_2" angle = "${2*3.14159/5*1}"/>
+            <xmacro_block name="power_rune_leaf_visual_collision" suffix="_3" angle = "${2*3.14159/5*2}"/> 
+            <xmacro_block name="power_rune_leaf_visual_collision" suffix="_4" angle = "${2*3.14159/5*3}"/> 
+            <xmacro_block name="power_rune_leaf_visual_collision" suffix="_5" angle = "${2*3.14159/5*4}"/> 
+        </link>
+        <!--armor link-->
+        <xmacro_block name="power_rune_leaf_armor_link" parent="${prefix}power_rune" 
+                suffix="_1" angle = "${0}"/>
+        <xmacro_block name="power_rune_leaf_armor_link" parent="${prefix}power_rune" 
+                suffix="_2" angle = "${2*3.14159/5*1}"/>
+        <xmacro_block name="power_rune_leaf_armor_link" parent="${prefix}power_rune" 
+                suffix="_3" angle = "${2*3.14159/5*2}"/>
+        <xmacro_block name="power_rune_leaf_armor_link" parent="${prefix}power_rune" 
+                suffix="_4" angle = "${2*3.14159/5*3}"/>
+        <xmacro_block name="power_rune_leaf_armor_link" parent="${prefix}power_rune" 
+                suffix="_5" angle = "${2*3.14159/5*4}"/>
+    </xmacro_define_block>
+</sdf>

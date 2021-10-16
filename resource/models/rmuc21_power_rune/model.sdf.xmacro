@@ -1,0 +1,53 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+    <!--macro defination:visual_collision_with_mesh_rgb-->
+    <xmacro_include uri="model://rmuc21_power_rune/rmuc21_power_rune.def.xmacro"/>
+    <!--rmuc21_supplier-->
+    <model name='rmuc21_power_rune'>
+        <joint name="world_joint" type="fixed">
+            <parent>world</parent>
+            <child>base_link</child>
+        </joint>
+        <link name="base_link">
+            <inertial>
+                <pose>0 0 1 0 0 0</pose>
+                <xmacro_block name="inertia_box" m="0.4" x="0.4" y="0.4" z="2" />
+            </inertial>
+            <visual name="visual">
+                <pose>0 0 1 0 0 0</pose>
+                <xmacro_block name="geometry_box" x="0.4" y="0.4" z="2" />
+            </visual>
+            <collision name="collision">
+                <pose>0 0 1 0 0 0</pose>
+                <xmacro_block name="geometry_box" x="0.4" y="0.4" z="2" />
+            </collision>
+        </link>
+        <joint name="power_rune_joint" type="revolute">
+            <pose relative_to="base_link">0 0 1.4 0 0 0</pose>
+            <parent>base_link</parent>
+            <child>motor_base</child>
+            <axis>
+                <xyz>1 0 0</xyz>
+            </axis>
+        </joint>
+        <link name="motor_base">
+            <pose relative_to="power_rune_joint">0 0 0 0 0 0</pose>
+            <inertial>
+                <xmacro_block name="inertia_box" m="0.1" x="0.1" y="0.1" z="0.1" />
+            </inertial>
+            <visual name="visual">
+                <xmacro_block name="geometry_box" x="0.1" y="0.1" z="0.1" />
+            </visual>
+            <collision name="collision">
+                <xmacro_block name="geometry_box" x="0.1" y="0.1" z="0.1" />
+            </collision>
+        </link>
+        <xmacro_block name="power_rune" parent="motor_base" prefix="red_" pose="0.2 0 0 0 0 0"/>
+        <plugin filename="ignition-gazebo-joint-controller-system"
+                    name="ignition::gazebo::systems::JointController">
+            <joint_name>power_rune_joint</joint_name>
+            <use_force_commands>false</use_force_commands>
+            <initial_velocity>0.6</initial_velocity>
+        </plugin>
+    </model>
+</sdf>

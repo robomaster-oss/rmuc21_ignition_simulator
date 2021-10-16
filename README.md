@@ -17,12 +17,14 @@ rmuc2021_ignition_simulator是基于Ignition Gazebo的仿真环境，为RoboMast
 
 ROS2和Ignition版本
 
-* ROS2：foxy
-* Ignition：Dome
+* ROS2：galactic
+* Ignition：Edifice
 
 ```bash
 # install ros-ign package
 sudo apt-get install ros-foxy-ros-ign
+# sdf xml macro tool
+pip install xmacro
 # cd src directory of ros2 workspace 
 git clone https://github.com/robomaster-oss/rmoss_interfaces
 git clone https://github.com/robomaster-oss/rmoss_ign
