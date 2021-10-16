@@ -19,7 +19,7 @@ find_package(rmoss_interfaces REQUIRED)
 
 #install
 install( DIRECTORY
-    ign launch models worlds
+    ign launch resource
   DESTINATION share/${PROJECT_NAME}
 )
 

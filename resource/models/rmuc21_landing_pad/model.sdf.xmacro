@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+    <xmacro_include uri="model://rmuc21_landing_pad/rmuc21_landing_pad.def.xmacro" />
+    <!--rmuc21_landing_pad-->
+    <model name='rmuc21_landing_pad'>
+        <static>1</static>
+        <xmacro_block name="landing_pad" prefix="red_" rgb="1 0 0" pose="0 0 0 0 0 0"/>
+    </model>
+</sdf>

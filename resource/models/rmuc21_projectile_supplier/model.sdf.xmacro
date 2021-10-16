@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+    <!--macro defination:visual_collision_with_mesh_rgb-->
+    <xmacro_include uri="model://rmuc21_projectile_supplier/rmuc21_projectile_supplier.def.xmacro" />
+    <!--rmuc21_supplier-->
+    <model name='rmuc21_projectile_supplier'>
+        <static>1</static>
+        <xmacro_block name="projectile_supplier" prefix="red_" rgb="1 0 0" pose="0 0 0 0 0 0"/>
+    </model>
+</sdf>

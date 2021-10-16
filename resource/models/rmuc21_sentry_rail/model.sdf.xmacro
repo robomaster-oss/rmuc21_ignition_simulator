@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+    <xmacro_include uri="model://rmuc21_sentry_rail/rmuc21_sentry_rail.def.xmacro" />
+    <!--rmuc21_sentry_rail-->
+    <model name='rmuc21_sentry_rail'>
+        <static>1</static>
+        <xmacro_block name="sentry_rail" prefix="red_" pose="0 0 1.445 0 0 0"/>
+    </model>
+</sdf>

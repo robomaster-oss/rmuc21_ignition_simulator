@@ -42,12 +42,12 @@
         </include>
         <!--standard robot robot-->
         <include>
-            <uri>model://rmua19_standard_robot2_red1</uri>
+            <uri>model://rmua19_standard_robot_b</uri>
             <name>standard_robot_red1</name>
             <pose>-11 0 0.20 0 0 0</pose>
         </include>
         <include>
-            <uri>model://rmua19_standard_robot2_blue1</uri>
+            <uri>model://rmua19_standard_robot_b</uri>
             <name>standard_robot_blue1</name>
             <pose>11 0 0.20 0 0 3.14159</pose>
         </include>

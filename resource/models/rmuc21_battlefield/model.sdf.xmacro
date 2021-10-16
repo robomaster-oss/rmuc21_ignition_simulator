@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+    <xmacro_include uri="model://rmuc21_ground/model.sdf.xmacro" />
+    <xmacro_include uri="model://rmuc21_resource_island/model.sdf.xmacro" />
+    <xmacro_include uri="model://rmuc21_projectile_supplier/rmuc21_projectile_supplier.def.xmacro" />
+    <xmacro_include uri="model://rmuc21_landing_pad/rmuc21_landing_pad.def.xmacro" />
+    <xmacro_include uri="model://rmuc21_sentry_rail/rmuc21_sentry_rail.def.xmacro" />
+    <!--rmuc21_battlefield-->
+    <model name='rmuc21_battlefield'>
+        <static>1</static>
+        <!--only for visual-->
+        <link name="ground_plane">
+            <visual name="visual">
+                <geometry>
+                    <plane>
+                        <normal>0 0 1</normal>
+                        <size>100 100</size>
+                    </plane>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                </material>
+            </visual>
+        </link>
+        <!--componets of battlefield-->
+        <xmacro_block name="rmuc21_ground"/>
+        <xmacro_block name="resource_island" pose="0 0 0 0 0 0.7854"/>
+        <xmacro_block name="projectile_supplier" prefix="red__" rgb="1 0 0" pose="-13.642 -5.750 0.1 0 0 0"/>
+        <xmacro_block name="projectile_supplier" prefix="blue_" rgb="0 0 1" pose="13.642 5.750 0.1 0 0 3.14159"/>
+        <xmacro_block name="landing_pad" prefix="red_" rgb="1 0 0" pose="-12.85 6.35 0.1 0 0 0" />
+        <xmacro_block name="landing_pad" prefix="blue_" rgb="0 0 1" pose="12.85 -6.35 0.1 0 0 3.14159" />
+        <xmacro_block name="sentry_rail" prefix="red_" pose="-8.703 0 1.445 0 0 0"/>
+        <xmacro_block name="sentry_rail" prefix="blue_" pose="8.703 0 1.445 0 0 0"/>
+    </model>
+</sdf>

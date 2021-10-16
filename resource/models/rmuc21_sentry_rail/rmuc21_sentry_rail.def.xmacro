@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+    <!--macro defination:sentry_rail-->
+    <xmacro_define_block name="sentry_rail" params="prefix pose">
+        <link name="${prefix}sentry_rail">
+            <pose>${pose}</pose>
+            <xmacro_block name="visual_collision_with_mesh" prefix="sentry_rail" uri="model://rmuc21_sentry_rail/meshes/sentry_rail.dae"/>
+        </link>
+    </xmacro_define_block>
+</sdf>

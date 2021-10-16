@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+    <xmacro_define_block name="projectile_supplier" params="prefix rgb pose">
+        <link name="${prefix}supplier">
+            <pose>${pose}</pose>
+            <xmacro_block name="visual_collision_with_mesh" prefix="supplier" uri="model://rmuc21_projectile_supplier/meshes/supplier.dae"/>
+            <visual name="extra_visual">
+                <xmacro_block name="geometry_mesh" uri="model://rmuc21_projectile_supplier/meshes/supplier_extra.dae"/>
+                <material>
+                    <ambient>${rgb} 1</ambient>
+                    <diffuse>${rgb} 1</diffuse>
+                    <specular>${rgb} 1</specular>
+                </material>
+            </visual>
+            <collision name="extra_collision">
+                <xmacro_block name="geometry_mesh" uri="model://rmuc21_projectile_supplier/meshes/supplier_extra.dae"/>
+            </collision>
+        </link>
+    </xmacro_define_block>
+</sdf>

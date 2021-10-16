@@ -1,0 +1,50 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+    <!--macro defination:visual_collision_with_mesh_rgb-->
+    <xmacro_define_block name="visual_collision_with_mesh_rgb" params="prefix uri rgb">
+        <visual name="${prefix}_visual">
+            <geometry>
+                <mesh>
+                    <uri>${uri}</uri>
+                </mesh>
+            </geometry>
+            <material>
+                <ambient>${rgb} 1</ambient>
+                <diffuse>${rgb} 1</diffuse>
+                <specular>${rgb} 1</specular>
+            </material>
+        </visual>
+        <collision name="${prefix}_collision">
+            <geometry>
+                <mesh>
+                    <uri>${uri}</uri>
+                </mesh>
+            </geometry>
+        </collision>
+    </xmacro_define_block>
+    <xmacro_define_block name="rmuc21_ground">
+        <link name="flat_ground">
+            <xmacro_block name="visual_collision_with_mesh" prefix="ground" uri="model://rmuc21_ground/meshes/flat_ground.dae"/>
+            <xmacro_block name="visual_collision_with_mesh" prefix="wall" uri="model://rmuc21_ground/meshes/ground_wall.dae"/>
+        </link>
+        <link name="red_elevated_ground">
+            <pose>0 0 0 0 0 0</pose>
+            <xmacro_block name="visual_collision_with_mesh" prefix="left_elevated_ground" uri="model://rmuc21_ground/meshes/left_elevated_ground.dae"/>
+            <xmacro_block name="visual_collision_with_mesh" prefix="right_elevated_ground" uri="model://rmuc21_ground/meshes/right_elevated_ground.dae"/>
+            <xmacro_block name="visual_collision_with_mesh_rgb" prefix="left_elevated_ground_wall" uri="model://rmuc21_ground/meshes/left_elevated_ground_wall.dae" rgb="1 0 0"/>
+            <xmacro_block name="visual_collision_with_mesh_rgb" prefix="right_elevated_ground_wall" uri="model://rmuc21_ground/meshes/right_elevated_ground_wall.dae" rgb="1 0 0"/>
+        </link>
+        <link name="blue_elevated_ground">
+            <pose>0 0 0 0 0 3.14159</pose>
+            <xmacro_block name="visual_collision_with_mesh" prefix="left_elevated_ground" uri="model://rmuc21_ground/meshes/left_elevated_ground.dae"/>
+            <xmacro_block name="visual_collision_with_mesh" prefix="right_elevated_ground" uri="model://rmuc21_ground/meshes/right_elevated_ground.dae"/>
+            <xmacro_block name="visual_collision_with_mesh_rgb" prefix="left_elevated_ground_wall" uri="model://rmuc21_ground/meshes/left_elevated_ground_wall.dae" rgb="0 0 1"/>
+            <xmacro_block name="visual_collision_with_mesh_rgb" prefix="right_elevated_ground_wall" uri="model://rmuc21_ground/meshes/right_elevated_ground_wall.dae" rgb="0 0 1"/>
+        </link>
+    </xmacro_define_block>
+    <!--rmuc21_ground-->
+    <model name='rmuc21_ground'>
+        <static>1</static>
+        <xmacro_block name="rmuc21_ground"/>
+    </model>
+</sdf>

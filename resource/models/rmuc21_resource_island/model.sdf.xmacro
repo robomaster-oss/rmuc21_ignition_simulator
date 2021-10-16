@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+   <!--macro defination:rmuc21_resource_island-->
+    <xmacro_define_block name="resource_island" params="pose">
+        <link name="resource_island">
+            <pose>${pose}</pose>
+            <xmacro_block name="visual_collision_with_mesh" prefix="base" uri="model://rmuc21_resource_island/meshes/resource_island_base.dae"/>
+            <xmacro_block name="visual_collision_with_mesh" prefix="holder" uri="model://rmuc21_resource_island/meshes/resource_island_holder.dae"/>
+        </link>
+    </xmacro_define_block>
+    <model name='rmuc21_resource_island'>
+        <static>1</static>
+        <xmacro_block name="resource_island" pose="0 0 0 0 0 0.7854" />
+    </model>
+</sdf>
