@@ -1,8 +1,7 @@
 <?xml version='1.0'?>
 <sdf version='1.7'>
-    <!--macro defination:visual_collision_with_mesh_rgb-->
     <xmacro_include uri="model://rmuc21_power_rune/rmuc21_power_rune.def.xmacro"/>
-    <!--rmuc21_supplier-->
+    <!--rmuc21 power rune-->
     <model name='rmuc21_power_rune'>
         <joint name="world_joint" type="fixed">
             <parent>world</parent>

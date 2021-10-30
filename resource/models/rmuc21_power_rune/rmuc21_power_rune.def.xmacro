@@ -21,7 +21,7 @@
     </xmacro_define_block>
     <xmacro_define_block name="power_rune_leaf_armor_link" params="parent suffix angle">
         <xmacro_block name="large_armor" suffix="${suffix}" parent="${parent}"
-                sticker_uri="" pose="0.14775 ${0.639445*sin(angle)} ${0.639445*cos(angle)} ${-angle} 0 0"/>
+                sticker_type="" pose="0.14775 ${0.639445*sin(angle)} ${0.639445*cos(angle)} ${-angle} 0 0"/>
     </xmacro_define_block>
     <xmacro_define_block name="power_rune" params="prefix parent pose">
         <joint name="${prefix}power_rune_joint" type="fixed">
